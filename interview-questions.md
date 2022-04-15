@@ -8,14 +8,15 @@ Then, research the question to expand on your answer. Even if you feel you have 
 1. What are props in React?
 
   Your answer:
-
+Props are the parameters of a React component, operating the same way as function arguments 
   Researched answer:
+React Props are similar to the argument of a function in JavaScript
 
 
 
 2. What is a DOM event?
 
-  Your answer:
+  Your answer: 
 
   Researched answer:
 
