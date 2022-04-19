@@ -26,12 +26,8 @@ describe ("cutOffIndexZeroAndShuffle", () => {
     })
   })
 
-
-
-
-const colors1 = ["purple", "blue", "green", "yellow", "pink"]
 // Expected output example (can be a different order): ["yellow", "blue", "pink", "green"]
-const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+
 // Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
 
 
@@ -64,25 +60,24 @@ describe('hiLow', () => {
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const nums1 = [3, 56, 90, -8, 0, 23, 6]
 // Expected output: [-8, 90]
-const nums2 = [109, 5, 9, 67, 8, 24]
+
 // Expected output: [5, 109]
 
 
 // b) Create the function that makes the test pass.
 
 //PSEUDOCODE 
-// func hiLow (arr)
+// func hiLow (array)
 // reduce() to get min/max values from array
 // return variables using .reduce in new array. 
 
-const hiLow = (array) => {
+const hiLow = (arr) => {
     
-    let hi = array.reduce(function(a, b) {
+    let hi = arr.reduce(function(a, b) {
         return Math.max(a, b) 
-    })
-    let low = array.reduce(function(a, b) {
+    }),
+    low = arr.reduce(function(a, b) {
         return Math.min(a, b) 
     })
     return [low, hi] 
@@ -102,8 +97,6 @@ describe('uniqueSetArray', () => {
     });
   });
 
-const testArray1 = [3, 7, 10, 5, 4, 3, 3]
-const testArray2 = [7, 8, 2, 3, 1, 5, 4]
 // Expected output: [3, 7, 10, 5, 4, 8, 2, 1]
 
 
